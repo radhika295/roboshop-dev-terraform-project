@@ -28,14 +28,14 @@ resource "terraform_data" "catalogue" {
   }
 
   provisioner "file" {
-    source = "catalouge.sh"
+    source = "catalogue.sh"
     destination = "/tmp/catalogue.sh"
   }
 
   provisioner "remote-exec" {
     inline = [
-        "chmod +x /tmp/catalouge.sh",
-        "sudo sh /tmp/catalouge.sh catalogue"
+        "chmod +x /tmp/catalogue.sh",
+        "sudo sh /tmp/catalogue.sh catalogue ${var.environment}"
     ]
   }
 }
