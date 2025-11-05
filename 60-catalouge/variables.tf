@@ -9,3 +9,7 @@ variable "environment" {
     type = string  
     default = "dev"
 } 
+
+variable "domain_name" {
+    default = "daws86s.fun"
+}
