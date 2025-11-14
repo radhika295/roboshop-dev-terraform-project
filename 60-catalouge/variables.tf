@@ -11,5 +11,5 @@ variable "environment" {
 } 
 
 variable "domain_name" {
-    default = "daws86s.fun"
+    default = "devtraining.icu"
 }

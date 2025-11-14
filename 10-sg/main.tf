@@ -19,6 +19,8 @@ module "sg" {
   vpc_id = local.vpc_id
 }
 
+
+#practice 
 # # frontend access the traffic from frontend alb
 # resource "aws_security_group_rule" "frontend_frontend_alb" {
 #   type                     = "ingress"
