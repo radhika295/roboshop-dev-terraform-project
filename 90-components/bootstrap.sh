@@ -28,10 +28,10 @@ else
         cd $ANSIBLE_DIR
 fi
 
-# if [ "$component" == "payment" ]; then
-#     echo "Installing OpenSSL/OpenSSH packages for component: $component"
-#     dnf install -y openssl openssl-libs openssh openssh-server openssh-clients
-# fi
+if [ "$component" == "payment" ]; then
+    echo "Installing OpenSSL/OpenSSH packages for component: $component"
+    dnf install -y openssl openssl-libs openssh openssh-server openssh-clients
+fi
 
 # echo "Installing OpenSSL/OpenSSH packages for component: $component"
 # dnf install -y openssl openssl-libs openssh openssh-server openssh-clients
